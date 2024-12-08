@@ -1,6 +1,7 @@
 # Thai Python Translator
 
 A tool that allows you to write Python code using Thai syntax. Write Python programs in Thai while maintaining full Python compatibility!
+Published to [pypi.org](https://pypi.org/project/thai-python-translator/)
 
 ## Features
 
@@ -8,6 +9,7 @@ A tool that allows you to write Python code using Thai syntax. Write Python prog
 - Built-in support for common Python functions in Thai
 - Automatic translation to standard Python
 - Thai error messages for better debugging
+
 - Support for:
   - Functions (ฟังก์ชัน)
   - Control flow (ถ้า, ทำอีก, หรือถ้า)
@@ -71,28 +73,17 @@ thai-python hello.py
 
 To publish this to PyPI:
 
-1. Create accounts on PyPI and Test PyPI
-2. Install build tools:
+1. Install build tools:
 ```bash
 pip install build twine
 ```
 
-3. Build the package:
+2. Build the package:
 ```bash
 python -m build
 ```
 
-4. Upload to Test PyPI first:
-```bash
-twine upload --repository testpypi dist/*
-```
-
-5. Test the installation:
-```bash
-pip install --index-url https://test.pypi.org/simple/ thai-python-translator
-```
-
-6. If everything works, upload to real PyPI:
+3. Upload to PyPI:
 ```bash
 twine upload dist/*
 ```
@@ -110,6 +101,7 @@ pip install -e .
 ## TODO
 
 Future enhancements could include:
+
 - More Thai keywords and built-in functions
 - Better error messages and debugging tools
 - Support for more Python features (classes, decorators, etc.)
